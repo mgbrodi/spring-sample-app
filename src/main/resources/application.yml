@@ -2,3 +2,24 @@ info:
   app:
     name: "@project.artifactId@"
     version: "@project.version@"
+
+spring:
+  main:
+    banner-mode: off
+  jpa:
+    hibernate.ddl-auto: none
+    properties:
+      hibernate.jdbc.lob.non_contextual_creation: true
+
+  datasource:
+    initialization-mode: always
+    platform: postgres
+    url: jdbc:postgresql://${POSTGRES_URL}:5432/testdb
+    username: ${POSTGRES_USR}
+    password: ${POSTGRES_PW}
+
+
+logging:
+  level:
+    org.springframework: ERROR
+
