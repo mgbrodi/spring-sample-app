@@ -22,6 +22,12 @@ public class HelloController {
 	@Value("${spring.profiles.active:none}")
 	private String profile;
 
+    @Value("${spring.datasource.url:none}")
+    private String url;
+    @Value("${spring.datasource.username:none}")
+    private String username;
+    @Value("${spring.datasource.password:none}")
+    private String password;
 
 	@RequestMapping("/")
 	public String hello() {
@@ -40,7 +46,10 @@ public class HelloController {
 		final StringBuffer sb = new StringBuffer("{");
 		sb.append("app name='").append(name).append('\'');
 		sb.append(", version='").append(version).append('\'');
-		sb.append(", profile='").append(profile).append('\'');
+        sb.append(", profile='").append(profile).append('\'');
+        sb.append(", url='").append(url).append('\'');
+        sb.append(", username='").append(username).append('\'');
+        sb.append(", password='").append(password).append('\'');
 		sb.append('}');
 		return sb.toString();
 	}
