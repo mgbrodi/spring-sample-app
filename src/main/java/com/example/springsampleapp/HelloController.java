@@ -30,7 +30,7 @@ public class HelloController {
 		for(City city: cityService.findAll()) {
 			sb.append("<li>"+city.getName()+"</li>");
 		}
-		sb.append("</ul><br>");
+		sb.append("</ul><br>...you should!");
 		sb.append(toString());
 		return  sb.toString();
 	}
