@@ -26,7 +26,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String hello() {
 		final StringBuffer sb = new StringBuffer();
-		sb.append("<center><p>Hello, Prasanna!! Ciao Gabry!!</center>  <br> I wonder if you ever visited any of the following cities: <br><ul>");
+		sb.append("<center><p><h3>Hello, Prasanna!! Ciao Gabry!!</center>  </h3><br> I wonder if you ever visited any of the following cities: <br><ul>");
 		for(City city: cityService.findAll()) {
 			sb.append("<li>"+city.getName()+"</li>");
 		}
