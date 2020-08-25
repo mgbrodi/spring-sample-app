@@ -26,11 +26,11 @@ public class HelloController {
 	@RequestMapping("/")
 	public String hello() {
 		final StringBuffer sb = new StringBuffer();
-		sb.append("<p>Hello, Prasanna!! Ciao Gabry!! <br> I wonder if you ever visited any of the following cities: <br><ul>");
+		sb.append("<center><p>Hello, Prasanna!! Ciao Gabry!! <br> I wonder if you ever visited any of the following cities: <br><ul>");
 		for(City city: cityService.findAll()) {
 			sb.append("<li>"+city.getName()+"</li>");
 		}
-		sb.append("</ul><br>. ...you should!");
+		sb.append("</ul><br></center> ...you should!");
 		sb.append(toString());
 		return  sb.toString();
 	}
