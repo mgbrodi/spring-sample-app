@@ -33,7 +33,12 @@ public class HelloController {
 		for(City city: cityService.findAll()) {
 			sb.append("<li>"+city.getName()+"</li>");
 		}
-		Thread.sleep(2000);
+		try {
+			Thread.sleep(2000);
+		}
+		catch(InterruptedException e) {
+			System.out.println(e);
+		}
 		sb.append("</ul><br></center> ...you should!<br><p>");
 		sb.append(toString());
 		return  sb.toString();
