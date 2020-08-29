@@ -34,7 +34,7 @@ public class HelloController {
 			sb.append("<li>"+city.getName()+"</li>");
 		}
 		try {
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 		}
 		catch(InterruptedException e) {
 			System.out.println(e);
