@@ -90,13 +90,14 @@
 					</image>
 				</configuration>
 				<version>2.3.0.RELEASE</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>build-image</goal>
-						</goals>
-					</execution>
-				</executions>
+				<!-- If using maven plugin to build the image -->
+				<!--<executions>-->
+					<!--<execution>-->
+						<!--<goals>-->
+							<!--<goal>build-image</goal>-->
+						<!--</goals>-->
+					<!--</execution>-->
+				<!--</executions>-->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
