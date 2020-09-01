@@ -1,7 +1,10 @@
 # spring-sample-app
 
 
-Amazing app
+Amazing app 1
 
 
-Amazing app
+Amazing app 2
+
+
+Amazing app 3
