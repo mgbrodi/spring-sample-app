@@ -26,7 +26,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String hello() {
 		final StringBuffer sb = new StringBuffer();
-		sb.append("<center><h1><p style=\"color:blue\">Hello, Prasanna!!</p>");
+		sb.append("<center><h1><p style=\"color:blue\">Hello, SpringOne 2020 Attendees!!</p>");
 		sb.append("<p style=\"color:red\"> Ciao Gabry!!</p></center> ");
 		sb.append("<p style=\"color:green\"> How's going?</p></center>  </h1>");
 		sb.append("<p style=\"color:purple\"><br><center> I wonder if you ever visited any of the following cities:</center> <br><ul>");
@@ -35,7 +35,7 @@ public class HelloController {
 		}
 		try {
 			//For failure scenario put 5000
-			Thread.sleep(10);
+			Thread.sleep(5000);
 		}
 		catch(InterruptedException e) {
 			System.out.println(e);
