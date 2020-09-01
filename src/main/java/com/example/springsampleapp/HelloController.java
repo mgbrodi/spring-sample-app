@@ -26,10 +26,9 @@ public class HelloController {
 	@RequestMapping("/")
 	public String hello() {
 		final StringBuffer sb = new StringBuffer();
-		sb.append("<center><h1><p style=\"color:blue\">Hello, SpringOne 2020 Attendees!!</p>");
-		sb.append("<p style=\"color:red\"> Ciao Gabry!!</p>");
-		sb.append("<p style=\"color:green\"> How's it going?</p></center>  </h1>");
-		sb.append("<p style=\"color:purple\"><br><center> I wonder if you ever visited any of the following cities: <br><ul>");
+		sb.append("<center><h1><p style=\"color:blue\">Hello, SpringOne 2020 Attendees!!</p></h1>");
+		//sb.append("<p style=\"color:green\"> How's it going?</p></center>  </h1>");
+		sb.append("<p style=\"color:purple\"><br><center><h2> I wonder if you ever visited any of the following cities: <h2><br><ul>");
 		for(City city: cityService.findAll()) {
 			sb.append("<li>"+city.getName()+"</li>");
 		}
