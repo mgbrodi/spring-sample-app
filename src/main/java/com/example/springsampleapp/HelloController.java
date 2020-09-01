@@ -27,14 +27,14 @@ public class HelloController {
 	public String hello() {
 		final StringBuffer sb = new StringBuffer();
 		sb.append("<center><h1><p style=\"color:blue\">Hello, SpringOne 2020 Attendees!!</p></h1>");
-		//sb.append("<p style=\"color:green\"> How's it going?</p></center>  </h1>");
+		sb.append("<p style=\"color:green\"> How's it going?</p></center>  </h1>");
 		sb.append("<p style=\"color:purple\"><br><center><h2> I wonder if you ever visited any of the following cities: <h2><br><ul>");
 		for(City city: cityService.findAll()) {
 			sb.append("<li>"+city.getName()+"</li>");
 		}
 		try {
 			//For failure scenario put 5000
-			Thread.sleep(10);
+			Thread.sleep(5000);
 		}
 		catch(InterruptedException e) {
 			System.out.println(e);
