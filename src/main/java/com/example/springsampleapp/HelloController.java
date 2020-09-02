@@ -34,7 +34,7 @@ public class HelloController {
 		}
 		try {
 			//For failure scenario put 5000
-			Thread.sleep(10);
+			Thread.sleep(6000);
 		}
 		catch(InterruptedException e) {
 			System.out.println(e);
