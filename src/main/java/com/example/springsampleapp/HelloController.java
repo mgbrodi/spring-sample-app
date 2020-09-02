@@ -34,7 +34,7 @@ public class HelloController {
 		}
 		try {
 			//For failure scenario put 5000
-			Thread.sleep(5000);
+			Thread.sleep(10);
 		}
 		catch(InterruptedException e) {
 			System.out.println(e);
@@ -48,7 +48,6 @@ public class HelloController {
 	public String toString() {
 		final StringBuffer sb = new StringBuffer("{");
 		sb.append("app name='").append(name).append('\'');
-		sb.append(", version='").append(version).append('\'');
         sb.append(", profile='").append(profile).append('\'');
 		sb.append('}');
 		return sb.toString();
